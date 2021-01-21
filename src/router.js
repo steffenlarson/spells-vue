@@ -14,12 +14,12 @@ const routes = [
   {
     path: '/allspells',
     name: 'AllSpells',
-    component: loadPage('AboutPage')
+    component: loadPage('AllSpellsPage')
   },
   {
     path: '/myspells',
     name: 'MySpells',
-    component: loadPage('AboutPage')
+    component: loadPage('MySpellsPage')
   },
   {
     path: '/account',
