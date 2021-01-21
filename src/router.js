@@ -22,6 +22,12 @@ const routes = [
     component: loadPage('MySpellsPage')
   },
   {
+    path: '/allspells/:index',
+    name: 'ActiveSpell',
+    component: loadPage('SpellDetailsPage'),
+    beforeEnter: authGuard
+  },
+  {
     path: '/account',
     name: 'Account',
     component: loadPage('AccountPage'),

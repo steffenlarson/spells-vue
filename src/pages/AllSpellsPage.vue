@@ -1,6 +1,9 @@
 <template>
   <div class="AllSpellsPage">
-    <h5>{{}}</h5>
+    <h1>Lecturn</h1>
+    <div class="col-12">
+      <DndSpellComponent v-for="spell in state.spells" :key="spell.id" :spell="spell" />
+    </div>
   </div>
 </template>
 
@@ -26,8 +29,7 @@ export default {
     return {
       state
     }
-  },
-  components: {}
+  }
 }
 </script>
 
