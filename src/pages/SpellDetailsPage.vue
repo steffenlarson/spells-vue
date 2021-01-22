@@ -2,12 +2,12 @@
   <div v-if="spell.name" class="SpellDetailsPage container-fluid">
     <div class="row p-4">
       <div class="col text-center">
-        <h1>{{ spell.name }}</h1>
+        <h1><u>{{ spell.name }}</u></h1>
         <h2>Range: {{ spell.range }} | Duration: {{ spell.duration }}</h2>
       </div>
     </div>
     <div class="row p-4">
-      <div class="col-6 text-center">
+      <div class="col-5 offset-1 text-center">
         <h2>
           {{ spell.school.name }} | <span v-if="spell.damage">{{ spell.damage.damage_type.name }}
           </span>
@@ -19,7 +19,7 @@
           <li>Attack Type: {{ spell.attack_type }}</li>
         </ul>
       </div>
-      <div class="col-6 text-center">
+      <div class="col-5  text-center">
         <h4>{{ spell.desc }}</h4>
       </div>
     </div>
